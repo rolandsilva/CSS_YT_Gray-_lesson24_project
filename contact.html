@@ -12,15 +12,15 @@
 </head>
 
 <body>
-    <header class="HTML_lesson_banner">
-        HTML5 &nbsp;
-        <span style="color: red" ;> LTS &nbsp; Contact Us </span> &nbsp; Lesson 10 &nbsp; Project
+    <header class="CSS_lesson_banner">
+        CSS &nbsp;
+        <span style="color: red" ;> LTS &nbsp; Home </span> &nbsp; Lesson 10 &nbsp; Project
     </header>
 
     <header class="header">
         <h1 class="header__h1"> Contact The Little Taco Shop</h1>
-        <nav class="header_nav">
-            <ul class="header_ul">
+        <nav class="header__nav">
+            <ul class="header__ul">
                 <li class="header_li__home">
                     <a href=" index.html">Home</a>
                 </li>
@@ -54,53 +54,62 @@
 
     <hr>
 
-    <main>
-        <section>
-            <h2>Our Contact Form</h2>
-            <form action="https://httpbin.org/get" method="get">
-                <fieldset>
-                    <legend>Send us a Message:</legend>
-                    <p>
-                        <label for="Name:"></label>
-                        <input type="text" name="name" id="name" placeholder="Your Name" required>
-                    </p>
-
-                    <p>
-                        <label for="Email:"></label>
-                        <input type="email" name="email" id="email" placeholder="Your email" required>
-                    </p>
-
-                    <p>
-                        <label for="Your Message:">Your Message:</label>
-
-                        <br>
-
-                        <textarea name="Message" id="message" cols="30" rows="10"
-                            placeholder="Type your message here"></textarea>
-                    </p>
-                </fieldset>
-
-                <button type="submit">Send</button>
-                <button type="reset">Reset</button>
-
-        </section>
-        </form>
-
-        <section>
-            <h2>Our Adrress</h2>
+    <main class="main">
+        <article class="main__article">
+            <h2>Our Location</h2>
             <address>
                 555 Taco Temptation Lane, Suite T <br>
                 Kansas City, MO 55555-5555
                 <br><br>
                 Phone: <a href="tel:+555-555-5555">555-555-5555</a>
             </address>
-        </section>
+        </article>
+
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Contact Form</h2>
+
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send us a Message:</legend>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="Name:">Name:</label>
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="Your Name"
+                            required>
+                    </p>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="Email:">Email:</label>
+                        <input class="contact__input" type="email" name="email" id="email" placeholder="Your email"
+                            required>
+                    </p>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="Your Message:">Your Message:</label>
+
+                        <br>
+
+                        <textarea class="contact__textarea" name="Message" id="message" cols="30" rows="10"
+                            placeholder="Type your message here"></textarea>
+                    </p>
+                </fieldset>
+
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
+            </form>
+
+        </article>
+
     </main>
 
-    <hr>
+    <!-- <hr> -->
+    <br>
+    <a href="#">Back to top</a>
 
-    <footer>
-        <p>Copyright &copy; &nbsp; The Little Taco Shop
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy;</span>
+            <span class="nowrap">Little Taco Shop</span>
         </p>
     </footer>
 
