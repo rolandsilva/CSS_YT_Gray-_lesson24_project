@@ -263,7 +263,9 @@ a:active {
     padding: 0.5rem;
     border-radius: var(--BORDER-RADIUS);
     background-color: var(--HEADER-COLOR-LB);
-    color: var(--BUTTON-COLOR)
+    /* color: var(--BUTTON-COLOR); white */
+    color: var(--FONT-COLOR);
+    font-weight: bold;
 }
 
 /* || MENU */
